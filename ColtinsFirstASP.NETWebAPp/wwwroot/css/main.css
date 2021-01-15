@@ -1,0 +1,33 @@
+﻿
+body {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    color: whitesmoke;
+    background-color: darkgray;
+}
+
+label {
+    font-size: 20px;
+    color: whitesmoke;
+    width: 150px;
+}
+
+img {
+    height:600px;
+    width:auto;
+}
+
+i {
+    color: black;
+}
+
+input {
+    width: 220px;
+    text-align: center
+}
+
+p {
+  
+    text-align: center;
+}
+

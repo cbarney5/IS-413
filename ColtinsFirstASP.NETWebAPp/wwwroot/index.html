@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>IS 413 Assignment 1</title>
+    <link href="css/main.css" rel="stylesheet" />
+</head>
+<body>
+    <i class="fa fa-cloud"></i>
+    <h1>Coltin</h1>
+    <img src="img/ColtinGolfing.JPG" />
+    <h2>Top 3 Jobs I'm Interested In:</h2>
+    <ul>
+        <li>1. Cybersecurity Consultant</li>
+        <li>2. Project Manager</li>
+        <li>3. Data Analyst</li>
+
+    </ul>
+    <h2>What I hope to get out of this class:</h2>
+    <p>
+        I want to learn more about ASP.NET and further my skills relating to technical abilities. I am looking forward to push myself and learn a little more about
+        what it takes to be a programmer.
+    </p>
+
+    <h2>Grade Calculator</h2>
+    <form>
+        <label>Assignments:</label>
+        <input type="number" placeholder="Enter % Grade for Assignments" id="assignments" />
+        <br />
+        <br />
+        <label>Group Project:</label>
+        <input type="number" placeholder="Enter % Grade for Project" id="project" />
+        <br />
+        <br />
+        <label>Quizzes:</label>
+        <input type="number" placeholder="Enter % Grade for Quizzes" id="quizzes" />
+        <br />
+        <br />
+        <label>Exams:</label>
+        <input type="number" placeholder="Enter % Grade for Exams" id="exams" />
+        <br />
+        <br />
+        <label>Intex:</label>
+        <input type="number" placeholder="Enter % Grade for Intex" id="intex" />
+        <br />
+        <br />
+        <input type="button" value="Calculate Grade" id="calculateButton" onclick="calculateGrade()" />
+    </form>
+    <script src="js/gradeCalculation.js"></script>
+
+    <p id="ptag"></p>
+</body>
+</html>
