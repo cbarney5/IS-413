@@ -1,0 +1,39 @@
+﻿@*
+    Restaurant Input page
+*@
+@{
+    ViewBag.Title = "Restaurant Input";
+}
+@model Assignment4.Models.ApplicationResponse
+<h2>Submit Restaurant Suggestions Here</h2>
+<br />
+<form asp-action="RestaurantInput" method="post">
+    <div>
+        <label asp-for="ClientName">Your Name:</label>
+        <input asp-for="ClientName" />
+    </div>
+    <br />
+    @*
+        Restaurant inputs in form
+    *@
+    <div>
+        <label asp-for="SuggestedRestaurant">Name of Suggested Restaurant:</label>
+        <input asp-for="SuggestedRestaurant" />
+    </div>
+    <br />
+    <div>
+        <label asp-for="SuggestedDish">Suggested Dish:</label>
+        <input asp-for="SuggestedDish" />
+    </div>
+    <br />
+    <div>
+        <label asp-for="SuggRestPhone">Restaurant Phone Num:</label>
+        <input asp-for="SuggRestPhone" />
+    </div>
+    <br />
+    
+    <button type="submit">Submit Restaurant Suggestion</button>
+
+</form>
+
+<div asp-validation-summary="All"></div>

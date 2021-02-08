@@ -1,0 +1,25 @@
+﻿@{
+    ViewData["Title"] = "Band List";
+}
+@model IEnumerable<string>
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width" />
+    </head>
+
+<body>
+    <header>
+        <h1>Top 5 Restaurants Near Provo</h1>
+    </header>
+
+    <ul>
+        @foreach (string i in Model)
+        {
+            <li>@i</li>
+        }
+    </ul>
+</body>
+
+</html>
