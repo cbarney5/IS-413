@@ -30,7 +30,7 @@ namespace Assignment4.Models
                 RestaurantName = "Costa Vida",
                 FavoriteDish = null,
                 RestaurantAddress = "1200 N University Ave, Provo, UT 84606",
-                RestaurantPhone = "(801) 373-1876",
+                RestaurantPhone = null,
                 RestaurantWebsite = "costavida.com"
             };
             Restaurant r2 = new Restaurant(2)

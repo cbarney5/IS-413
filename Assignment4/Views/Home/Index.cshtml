@@ -1,12 +1,26 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@{
-    ViewBag.Title = "Welcome to the Top Restaurants in Provo Site";
+﻿@{
+    ViewBag.Title = "Top 5 Restaurants in Provo";
 }
+@model IEnumerable<string>
 
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width" />
+    </head>
 
-<h4>This site shows the Top 5 Restaurants in Provo</h4>
-<br />
+<body>
+    <header>
+        <h4>These are the top 5 restaurants in Provo according to me</h4>
+    </header>
+    <div>
+        <ul>
+            @foreach (string i in Model)
+            {
+                <li class="list-group-item">@i</li>
+            }
+        </ul>
+    </div>
+</body>
 
-<a class="btn btn-primary" asp-action="RestaurantList" >View the List</a>
+</html>

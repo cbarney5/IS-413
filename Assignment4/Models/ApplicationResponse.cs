@@ -8,6 +8,8 @@ namespace Assignment4.Models
         public string ClientName { get; set; }
         public string SuggestedRestaurant { get; set; }
         public string SuggestedDish { get; set; }
+        [DataType(DataType.PhoneNumber)]
+        [RegularExpression(@"^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$", ErrorMessage = "This is not a valid phone number")]
         public string SuggRestPhone { get; set; }
     }
 }

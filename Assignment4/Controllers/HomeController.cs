@@ -17,20 +17,17 @@ namespace Assignment4.Controllers
         {
             _logger = logger;
         }
-
+        
+   
+        
         public IActionResult Index()
-        {
-            return View();
-        }
-
-        public IActionResult RestaurantList()
         {
             List<string> restaurantList = new List<string>();
 
             foreach(Restaurant r in Restaurant.GetRestaurants())
             {
                 string? FavDish = r.FavoriteDish ?? "It's all tasty!";
-                restaurantList.Add($"#{r.RestaurantRank}: {r.RestaurantName} Best Dish:{FavDish} Address: {r.RestaurantAddress} Phone Number: {r.RestaurantPhone} Website: {r.RestaurantWebsite}");
+                restaurantList.Add($"#{r.RestaurantRank}: {r.RestaurantName} Best Dish: {FavDish} Address: {r.RestaurantAddress} Phone Number: {r.RestaurantPhone} Website: {r.RestaurantWebsite}");
             }
 
             return View(restaurantList);
