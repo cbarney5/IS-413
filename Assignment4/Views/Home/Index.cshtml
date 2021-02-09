@@ -1,19 +1,25 @@
-﻿@{
+﻿@*
+    Coltin Barney Section 001 2/4/2021 Assignment 4
+*@
+@{
     ViewBag.Title = "Top 5 Restaurants in Provo";
 }
 @model IEnumerable<string>
 
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta name="viewport" content="width=device-width" />
-    </head>
+<head>
+    <meta name="viewport" content="width=device-width" />
+</head>
 
 <body>
     <header>
         <h4>These are the top 5 restaurants in Provo according to me</h4>
     </header>
     <div>
+        @*
+        List of recommended restaurants
+        *@
         <ul>
             @foreach (string i in Model)
             {

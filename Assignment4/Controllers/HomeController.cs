@@ -19,7 +19,7 @@ namespace Assignment4.Controllers
         }
         
    
-        
+        //Creates string for the recommended restaurants on index page
         public IActionResult Index()
         {
             List<string> restaurantList = new List<string>();
@@ -32,11 +32,13 @@ namespace Assignment4.Controllers
 
             return View(restaurantList);
         }
+        //Get for restaurant input
         [HttpGet]
         public IActionResult RestaurantInput()
         {
             return View();
         }
+        //Post for restaurant input
         [HttpPost]
 
         public IActionResult RestaurantInput(ApplicationResponse appResponse)
@@ -47,7 +49,7 @@ namespace Assignment4.Controllers
             }
             return View();
         }
-
+        //View of restaurant suggestions in a table
         public IActionResult RestaurantSuggestions()
         {
             return View(TempStorage.Applications);

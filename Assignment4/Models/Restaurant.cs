@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations;
 namespace Assignment4.Models
 {
     public class Restaurant
-    {
+    {   //Model for Recommended restaurants
         public Restaurant(int rank)
         {
             RestaurantRank = rank;
@@ -22,7 +22,7 @@ namespace Assignment4.Models
 
 
 
-
+        //Recommended restaurants
         public static Restaurant[] GetRestaurants()
         {
             Restaurant r1 = new Restaurant(1)

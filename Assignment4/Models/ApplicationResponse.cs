@@ -3,6 +3,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace Assignment4.Models
 {
+    //Model for suggested restaurants
     public class ApplicationResponse
     {
         public string ClientName { get; set; }
